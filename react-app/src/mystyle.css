@@ -1,0 +1,113 @@
+/* reset code and common code starts here */
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+body{
+    background-color: #fdfdfd;
+    height: 100vh;
+}
+
+
+/* reset code and common code ends here */
+
+
+
+/* main starts here */
+h1{
+    font-size: 2rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+.container{
+    width: 85%;
+    margin: 0px auto;
+    padding: 0.75rem 0rem;
+}
+
+.flexbox{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.7rem;
+    justify-content: center;
+}
+
+.flexbox div{
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 30%;
+   
+    transition: 0.5s ;
+}
+
+.flexbox div:hover{
+    box-shadow: 1px 1px 10px gray;
+}
+
+img{
+    width: 100%;
+}
+
+.product-title{
+    color:#000;
+    font-size: 1.15rem;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.product-price, .product-rating{
+    color: #298163;
+    font-weight: bold;
+}
+
+.product-description span{
+    font-weight: 600;
+}
+
+.cart-btn{
+    color: #fff;
+    font-size: 1rem;
+    margin-top: 0.65rem;
+    display: inline-block;
+    padding: 0.4rem 1rem;
+    background-color: #298163;
+    border-radius: 2px;
+}
+
+.cart-btn:hover{
+    color: #fff;
+}
+
+.product-texts{
+    padding: 1rem;
+}
+
+/* main ends here */
+
+
+
+/* responsive starts here */
+
+
+@media screen  and (max-width:992px){
+
+    .flexbox{
+        gap: 1.5rem;
+    }
+
+    .flexbox div{
+        flex-basis: 48%;
+    }
+}
+
+@media screen  and (max-width:768px){
+    h1{
+        font-size: 1.75rem;
+    }
+}
+/* responsive ends here */
